@@ -1,0 +1,17 @@
+# Default annealing curriculum config
+total_annealing_tokens: 100000000000  # 100B
+tokens_per_step: 2097152  # 2M ~ 2048 * 1024
+initial_web_weight: 0.65
+final_web_weight: 0.10
+initial_synth_weight: 0.15
+final_synth_weight: 0.45
+domain_weight: 0.25
+instruction_weight: 0.10
+quality_base_threshold: 0.3
+quality_alpha: 0.5
+log_interval: 100
+seed: 42
+quality_filter_enabled: true
+dedup_enabled: true
+min_example_tokens: 16
+max_example_tokens: 8192

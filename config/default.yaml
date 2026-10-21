@@ -1,0 +1,24 @@
+total_annealing_tokens: 100000000000
+tokens_per_step: 2097152
+seed: 42
+log_interval: 50
+schedule:
+  initial_web_weight: 0.65
+  final_web_weight: 0.10
+  initial_synth_weight: 0.15
+  final_synth_weight: 0.45
+  domain_weight: 0.25
+  instruction_weight: 0.08
+  schedule_type: "cosine"
+quality:
+  base_threshold: 0.30
+  slope: 0.40
+  min_length: 32
+  max_length: 8192
+  dedup_enabled: true
+sources:
+  web_low_quality_size: 1000000
+  web_high_quality_size: 500000
+  synthetic_size: 300000
+  domain_size: 400000
+  instruction_size: 100000
