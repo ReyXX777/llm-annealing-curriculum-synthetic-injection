@@ -1,6 +1,6 @@
 # Curriculum Design & Data Scheduling — Annealing Phase
 
-PhD-grade, industry-standard implementation of the annealing + synthetic injection curriculum described in the assignment.
+Standard implementation of the annealing + synthetic injection curriculum described in the assignment.
 
 **Goal:** Finish pre-training with a high-quality annealing mix (50B-200B tokens) that heavily weights textbook-quality synthetic data + specialized domain data while decaying lower-quality web text.
 
